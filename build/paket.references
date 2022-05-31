@@ -1,0 +1,7 @@
+group Build
+    FSharp.Core
+    Fake.Core.Environment
+    Fake.IO.FileSystem
+    Fake.DotNet.Cli
+    BlackFox.Fake.BuildTask
+    BlackFox.PathEnvironment

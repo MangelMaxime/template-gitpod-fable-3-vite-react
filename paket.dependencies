@@ -9,3 +9,15 @@ nuget FSharp.Core
 nuget Fable.Core
 nuget Feliz
 nuget Fable.Elmish
+
+group Build
+    source https://api.nuget.org/v3/index.json
+    framework: net6.0
+    storage: none
+
+    nuget FSharp.Core
+    nuget Fake.Core.Environment
+    nuget Fake.IO.FileSystem
+    nuget Fake.DotNet.Cli
+    nuget BlackFox.Fake.BuildTask
+    nuget BlackFox.PathEnvironment
