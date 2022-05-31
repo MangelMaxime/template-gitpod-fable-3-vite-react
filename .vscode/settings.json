@@ -1,4 +1,9 @@
 {
+
+    "files.insertFinalNewline": true,
+    "files.trimTrailingWhitespace": true,
+    "editor.trimAutoWhitespace": true,
+    "files.trimFinalNewlines": true,
     "files.exclude": {
         "**/.git": true,
         "**/.svn": true,
