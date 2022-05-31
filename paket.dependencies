@@ -1,0 +1,11 @@
+source https://api.nuget.org/v3/index.json
+
+storage: none
+framework: net6.0
+
+nuget FSharp.Core
+
+# Client
+nuget Fable.Core
+nuget Feliz
+nuget Fable.Elmish

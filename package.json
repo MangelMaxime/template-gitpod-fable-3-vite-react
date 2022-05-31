@@ -1,0 +1,9 @@
+{
+  "name": "template-gitpod-fable-3",
+  "author": "Mangel Maxime",
+  "license": "MIT",
+  "devDependencies": {
+    "@vitejs/plugin-react": "^1.3.2",
+    "vite": "^2.9.9"
+  }
+}
