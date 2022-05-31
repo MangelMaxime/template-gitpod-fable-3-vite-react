@@ -12,3 +12,8 @@ vscode:
     - EditorConfig.EditorConfig
     - PKief.material-icon-theme
     - ionutvmi.path-autocomplete
+
+ports:
+  - port: 3000
+    visibility: public
+    onOpen: open-preview
