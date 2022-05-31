@@ -1,9 +1,7 @@
 module App
 
 open Feliz
-open Fable.Core
 open Fable.Core.JsInterop
-open Feliz
 open Browser
 
 // Workaround to have React-refresh working
@@ -12,12 +10,12 @@ emitJsStatement () "import React from \"react\""
 
 [<ReactComponent>]
 let App () =
-    let uptime, setUptime = React.useState 0
+    let uptime, setUptime = React.useStateWithUpdater 0
 
     React.useEffect(fun () ->
         let timerId =
             window.setInterval(fun () ->
-                setUptime (uptime + 1)
+                setUptime (fun uptime -> uptime + 1)
             , 1000)
 
         { new System.IDisposable with
