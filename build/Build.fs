@@ -48,7 +48,7 @@ let main args =
     }
 
     let build = BuildTask.create "Build" [ npmInstall; clean ] {
-        run dotnet "fable --watch" srcPath
+        run dotnet "fable" srcPath
         run npx "vite build" srcPath
     }
 
